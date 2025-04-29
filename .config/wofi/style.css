@@ -1,0 +1,52 @@
+/* General Styles */
+* {
+    font-family: "FiraCode Nerd Font";
+    font-size: 17px;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+}
+
+/* Window Styles */
+window {
+    font-size: 17px;
+    background-color: #1d1b1f;
+    border: 1px solid #5e81ac;
+    /*border-radius: 10px;*/
+    padding: 10px;
+}
+
+/* Entry Styling */
+#entry {
+    padding: 0.5em;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+#entry:selected {
+    background: linear-gradient(90deg, #3a506b, #1c2541);
+    margin: 2px;
+    border-radius: 6px;
+}
+
+#entry:selected #text {
+    background: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#text {
+    margin-left: 1em;
+    color: #b0b0b0;
+}
+
+#input {
+    background-color: rgba(29, 27, 31, 0.8);
+    color: white;
+    padding: 0.4em;
+    border-radius: 6px 6px 0px 0px;
+    font-size: 16px;
+    border-top: 1px solid #5e81ac;
+    border-left: 1px solid #5e81ac;
+    border-right: 1px solid #5e81ac;
+}
