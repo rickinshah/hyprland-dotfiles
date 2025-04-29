@@ -147,6 +147,13 @@ button:hover {
 }
 
 
+#custom-notification:hover,
+#custom-vkeyboard:hover,
+#idle_inhibitor:hover,
+#custom-power:hover,
+#custom-launcher:hover,
+#mpris:hover,
+#workspaces:hover,
 #tray:hover,
 #battery:hover,
 #battery.charging:hover,
