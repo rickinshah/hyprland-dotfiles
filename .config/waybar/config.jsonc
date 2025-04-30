@@ -197,7 +197,7 @@
     },
     "custom/vkeyboard":{
         "format": " ",
-        "on-click": "pgrep wvkbd-mobintl && pkill wvkbd-mobintl || wvkbd-mobintl",
+        "on-click": "pgrep wvkbd-mobintl && pkill wvkbd-mobintl || wvkbd-mobintl --bg 2a232b --fg 313244 --fg-sp 313244",
         "tooltip-format": "Virtual Keyboard"
     },
     "custom/media": {
