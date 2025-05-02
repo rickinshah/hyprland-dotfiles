@@ -1,0 +1,77 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "assistant": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.0-pro-exp"
+    },
+    "version": "2"
+  },
+  "terminal": {
+    "dock": "bottom"
+  },
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 18,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_family": "Inter",
+  "buffer_font_weight": 400,
+  "buffer_line_height": {
+    "custom": 2
+  },
+  "theme": {
+    "mode": "system",
+    "light": "JetBrains New Dark",
+    "dark": "One Dark"
+  },
+  "vim": {
+    "use_system_clipboard": "on_yank",
+    "toggle_relative_line_numbers": true
+  },
+  "languages": {
+    "JavaScript": {
+      "tab_size": 4
+    },
+    "SQL": {
+      "format_on_save": "off"
+    }
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "errors"
+  },
+  "project_panel": {
+    "indent_size": 16
+  },
+  "vertical_scroll_margin": 20,
+  "auto_indent_on_paste": false,
+  "autoscroll_on_clicks": true,
+  "confirm_quit": true,
+  "inlay_hints": {
+    "show_background": true,
+    "enabled": true
+  },
+  "auto_signature_help": true,
+  // "scroll_sensitivity": 4,
+  "soft_wrap": "editor_width"
+}
