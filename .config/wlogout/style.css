@@ -21,6 +21,8 @@ button {
     transition: all 0.4s ease;
 }
 
+button:focus,
+button:active,
 button:hover {
     background-color: #45475a;
     background-repeat: no-repeat;

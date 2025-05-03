@@ -7,9 +7,24 @@
     //"margin-right": 0,
     // "width": 1280, // Waybar width
     "spacing": 8, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "mpris"],
-    "modules-center": ["clock", "custom/notification"],
-    "modules-right": ["custom/vkeyboard", "idle_inhibitor", "pulseaudio", "backlight", "battery", "tray", "custom/power"],
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+        "mpris"
+    ],
+    "modules-center": [
+        "clock",
+        "custom/notification"
+    ],
+    "modules-right": [
+        "custom/vkeyboard",
+        "idle_inhibitor",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "tray",
+        "custom/power"
+    ],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -45,7 +60,10 @@
     "sway/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
-        "format-icons": ["", ""],
+        "format-icons": [
+            "",
+            ""
+        ],
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
@@ -86,15 +104,15 @@
         // "icon-size": 21,
         "spacing": 10
     },
-"clock": {
-    "format": "󰥔 {:%R  󰃭 %A %d}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "interval": 60
-},
+    "clock": {
+        "format": "󰥔 {:%R  󰃭 %A %d}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "interval": 60
+    },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "interval":60,
+        "interval": 60,
     },
     "memory": {
         "format": "{}% "
@@ -105,13 +123,29 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
     },
     "backlight": {
         // "device": "acpi_video1",
         "tooltip": false,
         "format": "☀ {percent}%",
-        "format-icons": ["░░░░░░░░░░","█░░░░░░░░░", "██░░░░░░░░", "███░░░░░░░", "████░░░░░░", "█████░░░░░", "██████░░░░", "███████░░░", "████████░░", "█████████░", "██████████"],
+        "format-icons": [
+            "░░░░░░░░░░",
+            "█░░░░░░░░░",
+            "██░░░░░░░░",
+            "███░░░░░░░",
+            "████░░░░░░",
+            "█████░░░░░",
+            "██████░░░░",
+            "███████░░░",
+            "████████░░",
+            "█████████░",
+            "██████████"
+        ],
         "on-scroll-up": "brightnessctl set 2%+",
         "on-scroll-down": "brightnessctl set 2%-"
     },
@@ -125,7 +159,19 @@
         "format": "  {capacity}%",
         // good": "",
         // "format-full": "",
-        "format-icons": ["░░░░░░░░░░","█░░░░░░░░░", "██░░░░░░░░", "███░░░░░░░", "████░░░░░░", "█████░░░░░", "██████░░░░", "███████░░░", "████████░░", "█████████░", "██████████"],
+        "format-icons": [
+            "░░░░░░░░░░",
+            "█░░░░░░░░░",
+            "██░░░░░░░░",
+            "███░░░░░░░",
+            "████░░░░░░",
+            "█████░░░░░",
+            "██████░░░░",
+            "███████░░░",
+            "████████░░",
+            "█████████░",
+            "██████████"
+        ],
         "interval": 30
     },
     "battery#bat2": {
@@ -155,49 +201,60 @@
             "phone": "",
             "portable": "",
             "car": "",
-
-        "default": ["░░░░░░░░░░","█░░░░░░░░░", "██░░░░░░░░", "███░░░░░░░", "████░░░░░░", "█████░░░░░", "██████░░░░", "███████░░░", "████████░░", "█████████░", "██████████"],
+            "default": [
+                "░░░░░░░░░░",
+                "█░░░░░░░░░",
+                "██░░░░░░░░",
+                "███░░░░░░░",
+                "████░░░░░░",
+                "█████░░░░░",
+                "██████░░░░",
+                "███████░░░",
+                "████████░░",
+                "█████████░",
+                "██████████"
+            ],
         },
-    "interval": 60,
-        "on-click":"pamixer --toggle-mute",
-	"on-scroll-up": "pamixer --allow-boost --set-limit 150 --increase 2",
-	"on-scroll-down": "pamixer --allow-boost --set-limit 150 --decrease 2"
+        "interval": 60,
+        "on-click": "pamixer --toggle-mute",
+        "on-scroll-up": "pamixer --allow-boost --set-limit 150 --increase 2",
+        "on-scroll-down": "pamixer --allow-boost --set-limit 150 --decrease 2"
     },
-    "custom/launcher":{
+    "custom/launcher": {
         "format": " ",
         "on-click": "pgrep wofi && pkill wofi || wofi -a",
         "tooltip-format": "Menu"
     },
-    "custom/power":{
+    "custom/power": {
         "format": "",
-        "tooltip":false,
+        "tooltip": false,
         /* "on-click": "bash ~/.config/rofi/leave/leave.sh", */
         /* "on-click":"rofi-powermenu" */
         "on-click": "wlogout -p layer-shell"
     },
-    "custom/firefox":{
-    	"format": "",
-	"on-click": "floorp"
+    "custom/firefox": {
+        "format": "",
+        "on-click": "floorp"
     },
-    "custom/file":{
-    	"format": "",
-	"on-click": "thunar"
+    "custom/file": {
+        "format": "",
+        "on-click": "thunar"
     },
-    "custom/code":{
-    	"format": "",
-	"on-click": "eclipse"
+    "custom/code": {
+        "format": "",
+        "on-click": "eclipse"
     },
-    "custom/terminal":{
-    	"format": "",
-	"on-click": "kitty"
+    "custom/terminal": {
+        "format": "",
+        "on-click": "kitty"
     },
-    "custom/mail":{
-    	"format": "",
-	"on-click": "thunderbird"
+    "custom/mail": {
+        "format": "",
+        "on-click": "thunderbird"
     },
-    "custom/vkeyboard":{
+    "custom/vkeyboard": {
         "format": " ",
-        "on-click": "pgrep wvkbd-mobintl && pkill wvkbd-mobintl || wvkbd-mobintl --bg 2a232b --fg 313244 --fg-sp 313244",
+        "on-click": "pgrep wvkbd-mobintl && pkill wvkbd-mobintl || wvkbd-mobintl --bg 1e1e2b --fg 313244 --fg-sp 313244",
         "tooltip-format": "Virtual Keyboard"
     },
     "custom/media": {
@@ -221,24 +278,23 @@
         "on-click-middle": "close"
     },
     "custom/notification": {
-	"tooltip": false,
-	"format": "{icon}",
-	"format-icons": {
-	     "notification": "\uF0A2<span foreground='red'><sup>\uF444</sup></span>",
-	     "none": "\uF0A2 ",
-	     "dnd-notification": "\uF1F7<span foreground='red'><sup>\uF444</sup></span>",
-	     "dnd-none": "\uF1F7 ",
-	     "inhibited-notification": "\uF0A2<span foreground='red'><sup>\uF444></sup></span>",
-	     "inhibited-none": "\uF0A2 ",
-	     "dnd-inhibited-notification": "\uF1F7<span foreground='red'><sup>\uF444</sup></span>",
-	     "dnd-inhibited-none": "\uF1F7 "
-	},
-	"return-type": "json",
-	"exec-if": "which swaync-client",
-	"exec": "swaync-client -swb",
-	"on-click": "swaync-client -t -sw",
-	"on-click-right": "swaync-client -d -sw",
-	"escape": true,
-   }
-
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "\uF0A2<span foreground='red'><sup>\uF444</sup></span>",
+            "none": "\uF0A2 ",
+            "dnd-notification": "\uF1F7<span foreground='red'><sup>\uF444</sup></span>",
+            "dnd-none": "\uF1F7 ",
+            "inhibited-notification": "\uF0A2<span foreground='red'><sup>\uF444></sup></span>",
+            "inhibited-none": "\uF0A2 ",
+            "dnd-inhibited-notification": "\uF1F7<span foreground='red'><sup>\uF444</sup></span>",
+            "dnd-inhibited-none": "\uF1F7 "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true,
+    }
 }
