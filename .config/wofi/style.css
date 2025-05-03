@@ -2,7 +2,7 @@
 * {
     font-family: "FiraCode Nerd Font";
     font-size: 17px;
-    color: #ffffff;
+    color: #b7bdf8;
     border: none;
     border-radius: 0px;
 }
@@ -10,8 +10,8 @@
 /* Window Styles */
 window {
     font-size: 17px;
-    background-color: #1d1b1f;
-    border: 1px solid #5e81ac;
+    background-color: #1e1e2b;
+    border: 1px solid #b7bdf8;
     /*border-radius: 10px;*/
     padding: 10px;
 }
@@ -19,34 +19,32 @@ window {
 /* Entry Styling */
 #entry {
     padding: 0.5em;
-    border-radius: 6px;
-    color: #ffffff;
+    /* border-radius: 6px; */
+    color: #b7bdf8;
 }
 
 #entry:selected {
-    background: linear-gradient(90deg, #3a506b, #1c2541);
-    margin: 2px;
-    border-radius: 6px;
+    background: #313244;
+    margin: 0 2 0 2px;
 }
 
 #entry:selected #text {
-    background: rgba(0, 0, 0, 0);
     font-weight: bold;
-    color: #ffffff;
+    color: #b7bdf8;
 }
 
 #text {
     margin-left: 1em;
-    color: #b0b0b0;
+    color: #b7bdf8;
 }
 
 #input {
-    background-color: rgba(29, 27, 31, 0.8);
+    background-color: #1e1e2b;
     color: white;
     padding: 0.4em;
     border-radius: 6px 6px 0px 0px;
     font-size: 16px;
-    border-top: 1px solid #5e81ac;
-    border-left: 1px solid #5e81ac;
-    border-right: 1px solid #5e81ac;
+    border-top: 1px solid #b7bdf8;
+    border-left: 1px solid #b7bdf8;
+    border-right: 1px solid #b7bdf8;
 }

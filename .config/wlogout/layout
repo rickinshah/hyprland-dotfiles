@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "hyprlock",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "uwsm stop",
+    "action" : "hyprctl dispatch exit 0",
     "text" : "Logout",
     "keybind" : "e"
 }
