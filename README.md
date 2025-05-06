@@ -4,7 +4,7 @@ A minimal and cohesive Hyprland configuration inspired by the beautiful [Catppuc
 
 ## 🎬 Demo Video
 
-[![Watch the video](https://img.youtube.com/vi/7uqnbw2weE4/maxresdefault.jpg)](https://youtu.be/7uqnbw2weE4)
+https://github.com/user-attachments/assets/b8d8f016-1efe-4a88-9776-1bebf9c02146
 
 ## ✨ Features
 
