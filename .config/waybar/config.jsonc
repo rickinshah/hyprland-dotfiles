@@ -112,7 +112,7 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "interval": 60,
+        "interval": 60
     },
     "memory": {
         "format": "{}% "
@@ -156,21 +156,15 @@
             "critical": 20
         },
         "format-charging": "<b>↯ {capacity}%</b>",
-        "format": "  {capacity}%",
+        "format": "{icon}  {capacity}%",
         // good": "",
         // "format-full": "",
         "format-icons": [
-            "░░░░░░░░░░",
-            "█░░░░░░░░░",
-            "██░░░░░░░░",
-            "███░░░░░░░",
-            "████░░░░░░",
-            "█████░░░░░",
-            "██████░░░░",
-            "███████░░░",
-            "████████░░",
-            "█████████░",
-            "██████████"
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         "interval": 30
     },
