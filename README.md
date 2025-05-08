@@ -13,3 +13,7 @@ https://github.com/user-attachments/assets/963625af-402c-495d-8841-26d250d8d5f4
 - 🧊 Subtle blur and consistent UI styling
 - 🧠 Lightweight and optimized for performance
 - 🎯 Focused on usability, not just looks
+
+## 🎨 Credits
+
+- 📸 Wallpaper - https://github.com/orangci/walls-catppuccin-mocha
