@@ -78,15 +78,15 @@
             "keyColor": "magenta"
         },
         {
-             "type": "memory",
+            "type": "memory",
             "key": "  ﬙ Memory",
             "keyColor": "magenta"
         },
         {
-          "type": "disk",
-          "key": "  󰋊 Disk (/)",
-          "folders": "/",
-          "keyColor": "magenta"
+            "type": "disk",
+            "key": "  󰋊 Disk (/)",
+            "folders": "/",
+            "keyColor": "magenta"
         },
         {
             "type": "command",
@@ -103,12 +103,11 @@
             "type": "custom",
             "format": "└──────────────────────────────────────────┘"
         },
-	{
+        {
             "type": "colors",
             "paddingLeft": 2,
             "symbol": "circle"
         },
         "break"
-
     ]
 }
