@@ -166,7 +166,7 @@
             "",
             ""
         ],
-        "interval": 30
+        "interval": 10
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -248,7 +248,7 @@
     },
     "custom/vkeyboard": {
         "format": " ",
-        "on-click": "pgrep wvkbd-mobintl && pkill wvkbd-mobintl || wvkbd-mobintl --bg 1e1e2b --fg 313244 --fg-sp 313244",
+        "on-click": "pkill wvkbd-mobintl || wvkbd-mobintl --bg 1e1e2b --fg 313244 --fg-sp 313244",
         "tooltip-format": "Virtual Keyboard"
     },
     "custom/media": {
