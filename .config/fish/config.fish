@@ -3,6 +3,16 @@ alias cat='bat'
 direnv hook fish | source
 if status is-interactive
     # Commands to run in interactive sessions can go here
+    function auto_activate_venv --on-variable PWD
+        if test -f .venv/bin/activate.fish
+            if not set -q VIRTUAL_ENV
+                source .venv/bin/activate.fish
+            end
+        else if set -q VIRTUAL_ENV
+            deactivate
+        end
+    end
+
     set -g fish_greeting
     fastfetch
     stty -icanon -echo
