@@ -1,5 +1,5 @@
 {
-    //"layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 40, // Waybar height (to be removed for auto height)
     //"margin-top": 0,
@@ -51,7 +51,7 @@
         "format": "⏸ {dynamic}",
         "format-paused": "▶ {dynamic}",
         "format-stopped": "⏹ Stopped",
-        "interval": 2,
+        "interval": 1,
         "max-length": 60
     },
     "sway/mode": {
