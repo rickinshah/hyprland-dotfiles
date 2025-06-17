@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "google",
       "model": "gemini-2.0-pro-exp"
@@ -36,7 +36,7 @@
   },
   "theme": {
     "mode": "system",
-    "light": "JetBrains New Dark",
+    "light": "Catppuccin Frappé - No Italics",
     "dark": "One Dark"
   },
   "vim": {

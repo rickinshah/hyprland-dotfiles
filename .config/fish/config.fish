@@ -1,5 +1,6 @@
 alias ls='eza -1 --color=always --icons=always --hyperlink --group-directories-first'
 alias cat='bat'
+alias rm='rm -i'
 direnv hook fish | source
 if status is-interactive
     # Commands to run in interactive sessions can go here

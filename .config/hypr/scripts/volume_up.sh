@@ -8,5 +8,5 @@ elif [ $a -lt 150 ]; then
 else
 	$(volumectl -b -d -u set 150)
 fi
-sleep 0.05
+# sleep 0.05
 canberra-gtk-play -i audio-volume-change
